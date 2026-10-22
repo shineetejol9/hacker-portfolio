@@ -12,14 +12,11 @@ npm run dev
 - Terminal UI and View Tech Stack toggle: `src/components/Screen.jsx`
 - Theme and layout: `src/styles.css`
 - Resume PDF: `public/files/Shinee_resume.pdf`
-<<<<<<< HEAD
 - Character artwork: `public/shine.svg` (path set in `src/data/portfolio.js`)
 - Boot sequence: `src/components/Boot.jsx` · Hex data-rain background: `src/components/DataRain.jsx`
 - Skill icons: `src/components/SkillIcon.jsx` (add an entry per skill name)
 - Colours and fonts: CSS variables at the top of `src/styles.css`
-=======
 - Character artwork: place your transparent SVG at `public/character.svg`
->>>>>>> 5a35a8112dcc4dff2f1779499838c205fa230680
 
 Project GitHub links supplied by the owner are configured. Live demo URLs remain blank until supplied.
 # hacker-portfolio

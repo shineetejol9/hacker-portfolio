@@ -74,9 +74,5 @@ export const portfolio = {
     linkedin: "https://linkedin.com/in/shinee-tejol",
   },
 
-<<<<<<< HEAD
   files: { resume: "/files/Shinee_resume.pdf", cv: "/files/Shinee_CV.pdf" },
-=======
-  files: { resume: "/files/Shinee_resume.pdf", cv: "Shinee_CV.pdf" },
->>>>>>> 5a35a8112dcc4dff2f1779499838c205fa230680
 };

@@ -1,26 +1,13 @@
-<<<<<<< HEAD
 // Reusable button. Pass href to render a link styled as a button. `hint` shows the keyboard shortcut.
 export default function NavButton({ label, onClick, href, download, disabled, primary, hint, expanded }) {
   const cls = `btn${primary ? " primary" : ""}`;
   const inner = <span className="btn-in">{label}{hint && <kbd>{hint}</kbd>}</span>;
-=======
-// Reusable button. Pass href to render a link styled as a button.
-export default function NavButton({ label, onClick, href, download, disabled, primary }) {
-  const cls = `btn${primary ? " primary" : ""}`;
->>>>>>> 5a35a8112dcc4dff2f1779499838c205fa230680
   if (href) {
     const ext = /^https?:/.test(href);
     return (
       <a className={cls} href={href} download={download ? "" : undefined}
-<<<<<<< HEAD
          target={ext ? "_blank" : undefined} rel={ext ? "noopener noreferrer" : undefined}>{inner}</a>
     );
   }
   return <button className={cls} type="button" onClick={onClick} disabled={disabled} aria-label={label} aria-expanded={expanded}>{inner}</button>;
-=======
-         target={ext ? "_blank" : undefined} rel={ext ? "noopener noreferrer" : undefined}>{label}</a>
-    );
-  }
-  return <button className={cls} onClick={onClick} disabled={disabled} aria-label={label}>{label}</button>;
->>>>>>> 5a35a8112dcc4dff2f1779499838c205fa230680
 }
