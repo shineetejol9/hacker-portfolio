@@ -1,7 +1,7 @@
 /* Portfolio content for Shinee Tejol Patro.
    Resume: public/files/Shinee_resume.pdf */
 export const portfolio = {
-  characterSvg: "/character.png",
+  characterSvg: "/shine.svg",
 
   intro: {
     name: "Shinee Tejol Patro",
