@@ -46,7 +46,7 @@ case "projects": {
           ...(c.email ? [link("EMAIL", `mailto:${c.email}`)] : []),
           ...(c.github ? [link("GITHUB", c.github)] : []),
           ...(c.linkedin ? [link("LINKEDIN", c.linkedin)] : []),
-          ...c.other.filter((o) => o.url).map((o) => link(o.label, o.url)),
+          ...(c.other ?? []).filter((o) => o.url).map((o) => link(o.label, o.url)),
         ] };
     }
     case "resume":
