@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
 const p2 = (n) => String(n).padStart(2, "0");
 
@@ -25,6 +26,19 @@ export default function Terminal({ step, total, id, children }) {
           <span>uptime {p2(Math.floor(up / 60))}:{p2(up % 60)}</span>
         </footer>
       </div></div>
+=======
+// Terminal window frame with HUD decorations.
+export default function Terminal({ step, total, children }) {
+  return (
+    <section className="terminal" aria-label="Information terminal">
+      <i className="corner tl" /><i className="corner tr" /><i className="corner bl" /><i className="corner br" />
+      <header className="term-bar">
+        <span className="dots"><b /><b /><b /></span>
+        <span>root@portfolio:~$</span>
+        <span className="step">{String(step + 1).padStart(2, "0")}/{String(total).padStart(2, "0")}</span>
+      </header>
+      <div className="term-body">{children}</div>
+>>>>>>> 5a35a8112dcc4dff2f1779499838c205fa230680
     </section>
   );
 }

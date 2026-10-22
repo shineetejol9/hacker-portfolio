@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import TypedText from "./TypedText.jsx";
 import NavButton from "./NavButton.jsx";
+<<<<<<< HEAD
 import SkillIcon from "./SkillIcon.jsx";
+=======
+>>>>>>> 5a35a8112dcc4dff2f1779499838c205fa230680
 
 // One section. Parent remounts it (via key) on every screen/project change.
 export default function Screen({ model, index, total, projIdx, projCount, onOk, onBack, onProj, onRestart }) {
@@ -30,6 +33,7 @@ export default function Screen({ model, index, total, projIdx, projCount, onOk, 
     return () => window.removeEventListener("keydown", h);
   });
 
+<<<<<<< HEAD
   const title = `> ${model.title}`;
   return (
     <div className="screen">
@@ -52,6 +56,33 @@ export default function Screen({ model, index, total, projIdx, projCount, onOk, 
           ))}
         </div>
       )}
+=======
+  return (
+    <div className="screen">
+      <h2 className="screen-title">{"> "}{model.title}</h2>
+      <TypedText text={model.text} skip={skip} onDone={() => setDone(true)} />
+        {done && isSkills && (
+  <div className="skills-grid">
+    {model.skills.map((skill) => (
+      <div className="skill-card" key={skill}>
+        <div className="skill-icon">
+          {({
+            "HTML5": "🌐",
+            "JavaScript (JS)": "🟨",
+            "Tailwind CSS": "💨",
+            "React / Next.js": "⚛️",
+            "Node.js": "🟢",
+            "Python": "🐍",
+            "Data Science": "📊",
+            "MongoDB": "🍃",
+          })[skill]}
+        </div>
+        <span>{skill}</span>
+      </div>
+    ))}
+  </div>
+)}
+>>>>>>> 5a35a8112dcc4dff2f1779499838c205fa230680
       {!done && <button className="skip" onClick={() => setSkip(true)}>SKIP [SPACE]</button>}
       {done && model.links.length > 0 && (
         <nav className="links fade" aria-label="Links">
@@ -60,6 +91,7 @@ export default function Screen({ model, index, total, projIdx, projCount, onOk, 
       )}
       {done && isProjects && (
         <div className="project-tech-panel fade">
+<<<<<<< HEAD
           <NavButton label={showTech ? "HIDE TECH ▲" : "VIEW TECH STACK"} expanded={showTech}
             onClick={() => setShowTech((prev) => !prev)} />
           {showTech && (
@@ -70,6 +102,20 @@ export default function Screen({ model, index, total, projIdx, projCount, onOk, 
                   <span className="chip" key={t} style={{ "--i": i }}>{t}</span>
                 ))}
               </div>
+=======
+          <button
+            className="btn"
+            type="button"
+            onClick={() => setShowTech((prev) => !prev)}
+            aria-expanded={showTech}
+          >
+            {showTech ? "HIDE TECH ▲" : "VIEW TECH STACK"}
+          </button>
+          {showTech && (
+            <div className="project-tech-details">
+              <strong>TECH STACK //</strong>
+              <p>{model.techText || "Technologies not configured."}</p>
+>>>>>>> 5a35a8112dcc4dff2f1779499838c205fa230680
             </div>
           )}
         </div>
@@ -77,10 +123,17 @@ export default function Screen({ model, index, total, projIdx, projCount, onOk, 
       {done && (
         <div className="actions fade">
           {model.downloads.map((l, i) => <NavButton key={i} {...l} download />)}
+<<<<<<< HEAD
           {isProjects && <NavButton label="PREVIOUS PROJECT" hint="←" onClick={() => onProj(-1)} disabled={projIdx === 0} />}
           {isProjects && <NavButton label="NEXT PROJECT" hint="→" onClick={() => onProj(1)} disabled={projIdx >= projCount - 1} />}
           {!first && <NavButton label="BACK" hint="esc" onClick={onBack} />}
           {!last && <NavButton label={first ? "OK / INITIALIZE" : "OK"} hint="↵" onClick={onOk} primary />}
+=======
+          {isProjects && <NavButton label="PREVIOUS PROJECT" onClick={() => onProj(-1)} disabled={projIdx === 0} />}
+          {isProjects && <NavButton label="NEXT PROJECT" onClick={() => onProj(1)} disabled={projIdx >= projCount - 1} />}
+          {!first && <NavButton label="BACK" onClick={onBack} />}
+          {!last && <NavButton label={first ? "OK / INITIALIZE" : "OK"} onClick={onOk} primary />}
+>>>>>>> 5a35a8112dcc4dff2f1779499838c205fa230680
           {last && <NavButton label="RESTART EXPERIENCE" onClick={onRestart} primary />}
         </div>
       )}

@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+<<<<<<< HEAD
 
 const HL = /^(CGPA|Average|Percentage):/;
 // Splits text into reveal-tokens (word + trailing space) and tags each with a style class.
@@ -33,6 +34,15 @@ export default function TypedText({ text, skip, onDone, lead = false, speed = 55
   const done = n >= toks.length;
 
   useEffect(() => { if (skip) setN(toks.length); }, [skip, toks.length]);
+=======
+// Reveals text one word at a time. `skip` completes instantly. Calls onDone once finished.
+export default function TypedText({ text, skip, onDone, speed = 55 }) {
+  const words = useMemo(() => text.match(/\S+\s*|\s+/g) || [], [text]);
+  const [n, setN] = useState(0);
+  const done = n >= words.length;
+
+  useEffect(() => { if (skip) setN(words.length); }, [skip, words.length]);
+>>>>>>> 5a35a8112dcc4dff2f1779499838c205fa230680
   useEffect(() => {
     if (done) { onDone(); return; }
     const t = setTimeout(() => setN((v) => v + 1), speed);
@@ -42,9 +52,13 @@ export default function TypedText({ text, skip, onDone, lead = false, speed = 55
   return (
     <>
       <span className="sr-only">{text}</span>
+<<<<<<< HEAD
       <pre className="typed" aria-hidden="true">
         {toks.slice(0, n).map((k, i) => <span key={i} className={k.c}>{k.t}</span>)}<span className="cursor" />
       </pre>
+=======
+      <pre className="typed" aria-hidden="true">{words.slice(0, n).join("")}<span className="cursor" /></pre>
+>>>>>>> 5a35a8112dcc4dff2f1779499838c205fa230680
     </>
   );
 }

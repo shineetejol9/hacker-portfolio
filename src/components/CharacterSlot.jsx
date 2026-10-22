@@ -1,4 +1,5 @@
 import { useState } from "react";
+<<<<<<< HEAD
 /* Put your character art at the path set in src/data/portfolio.js (characterSvg).
    If it fails to load, an outline silhouette is shown instead. */
 export default function CharacterSlot({ src, name, section }) {
@@ -9,6 +10,15 @@ export default function CharacterSlot({ src, name, section }) {
       <div className="hud-tag" key={section} aria-hidden="true">
         <span>operator</span><b>{name}</b><span className="mod">module/{section}</span>
       </div>
+=======
+/* CHARACTER PLACEHOLDER. Replace by putting your SVG at public/character.svg
+   (path set in src/data/portfolio.js). No code change needed here.
+   Until the file exists, a subtle outline silhouette is shown. */
+export default function CharacterSlot({ src }) {
+  const [failed, setFailed] = useState(false);
+  return (
+    <aside className="character" aria-label="Character area">
+>>>>>>> 5a35a8112dcc4dff2f1779499838c205fa230680
       <div className="character-float">
         {!failed ? (
           <img src={src} alt="Hacker character" onError={() => setFailed(true)} />
@@ -18,6 +28,7 @@ export default function CharacterSlot({ src, name, section }) {
             <path d="M60 66 C20 70 24 150 30 170 L36 280 H56 V200 H64 V280 H84 L90 170 C96 150 100 70 60 66Z" />
           </svg>
         )}
+<<<<<<< HEAD
       </div>
       <svg className="pad" viewBox="0 0 300 90" aria-hidden="true">
         <defs>
@@ -28,6 +39,11 @@ export default function CharacterSlot({ src, name, section }) {
         <ellipse className="r2" cx="150" cy="45" rx="108" ry="29" />
         <ellipse className="r3" cx="150" cy="45" rx="70" ry="18" />
       </svg>
+=======
+
+      </div>
+      <div className="character-glow" />
+>>>>>>> 5a35a8112dcc4dff2f1779499838c205fa230680
     </aside>
   );
 }
