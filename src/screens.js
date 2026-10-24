@@ -31,7 +31,7 @@ case "projects": {
     case "certs":
       return { ...none, title: "CERTIFICATIONS",
         text: d.certifications.map((c, i) => `[${String(i + 1).padStart(2, "0")}] ${c.name}\n${c.issuer} // ${c.date}`).join("\n\n"),
-        links: d.certifications.map((c, i) => link(`CERTIFICATE ${i + 1}`, c.url)) };
+        links: d.certifications.map((c, i) => link(c.linkLabel || `VIEW CERTIFICATE ${String(i + 1).padStart(2, "0")}`, c.url)) };
     case "skills":
   return {
     ...none,
