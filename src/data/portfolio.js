@@ -53,7 +53,20 @@ export const portfolio = {
     },
   ],
 
-  certifications: [],
+  certifications: [
+    { name: "GirlScript Summer of Code 2026 Certificate", issuer: "GirlScript Summer of Code", date: "2026", url: "https://lnkd.in/p/dDEE3Td9" },
+    { name: "Internship Completion — Web Bocket Software Pvt. Ltd.", issuer: "Web Bocket Software Pvt. Ltd.", date: "2026", url: "https://lnkd.in/p/dP9Dm2Rx" },
+    { name: "Offer Letter — Web Bocket Software Pvt. Ltd.", issuer: "Web Bocket Software Pvt. Ltd.", date: "2026", url: "https://lnkd.in/p/dnCrpdzk", linkLabel: "VIEW OFFER LETTER 04" },
+    { name: "The Complete 2026 Python Bootcamp", issuer: "CodeWithHarry", date: "2026", url: "https://lnkd.in/p/dnRh27ux" },
+    { name: "Getting Started with Artificial Intelligence", issuer: "IBM", date: "2026", url: "https://lnkd.in/p/dV_kqmp4" },
+    { name: "Summer Course in Computer Network Security", issuer: "NIST University", date: "2026", url: "https://lnkd.in/p/dvZVrBgV" },
+    { name: "Google Student Ambassador", issuer: " Team Google", date: "2026", url: "https://lnkd.in/p/d2pQmmFq" },
+    { name: "GIET BBSR Innovate 5.0 National-Level Hackathon — Participation", issuer: "GIET Bhubaneswar", date: "2026", url: "https://lnkd.in/p/daPwSkkE" },
+    { name: "Pravaah 26 National-Level Hackathon — Participation", issuer: "IIT Bhubaneswar", date: "2026", url: "https://lnkd.in/p/d3wP9_cA" },
+    { name: "Hacksagon 2026 National-Level Hackathon — Finalist", issuer: "ABV-IIITM Gwalior", date: "2026", url: "https://lnkd.in/p/dzaA7VdW" },
+    { name: "Selected forSocial Summer of Code (SSoC) Season 5 — Contributor", issuer: "Social Summer of Code", date: "2026", url: "https://lnkd.in/p/dSFxNsHQ",linkLabel: "VIEW Mail 11" },
+    { name: "Selected for GirlScript Summer of Code 2026 — Open-Source Contributor", issuer: "GirlScript Summer of Code", date: "2026", url: "https://lnkd.in/p/dinfij9b",linkLabel: "VIEW Mail 12"},
+  ],
 
   skills: {
   "Tech Stack": [
