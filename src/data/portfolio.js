@@ -23,6 +23,13 @@ export const portfolio = {
   ],
 
   projects: [
+      {
+      name: "NEXUS — Enterprise Data Intelligence Platform",
+      description: "An enterprise-grade data intelligence platform designed to transform raw, unreliable datasets into clean, validated, actionable insights. Provides ingestion, profiling, validation, cleaning, transformation, quality analysis, anomaly detection, and interactive analytics, with JWT authentication and role-based access control.",
+      technologies: "Python 3.11, React 19, PostgreSQL, Tailwind CSS, JWT Authentication, Pytest",
+      github: "https://github.com/shineetejol9/nexus",
+      demo: "",
+    },
     {
       name: "ShopSense AI",
       description: "AI-powered e-commerce platform that uses Gemini Embeddings and MongoDB Atlas Vector Search to understand search intent beyond keywords. Includes an AI shopping assistant powered by OpenRouter.",
@@ -44,13 +51,7 @@ export const portfolio = {
       github: "https://github.com/shineetejol9/zestverse1",
       demo: "",
     },
-    {
-      name: "NEXUS — Enterprise Data Intelligence Platform",
-      description: "An enterprise-grade data intelligence platform designed to transform raw, unreliable datasets into clean, validated, actionable insights. Provides ingestion, profiling, validation, cleaning, transformation, quality analysis, anomaly detection, and interactive analytics, with JWT authentication and role-based access control.",
-      technologies: "Python 3.11, React 19, PostgreSQL, Tailwind CSS, JWT Authentication, Pytest",
-      github: "https://github.com/shineetejol9/nexus",
-      demo: "",
-    },
+   
   ],
 
   certifications: [
