@@ -23,7 +23,7 @@ export const portfolio = {
   ],
 
   projects: [
-      {
+    {
       name: "NEXUS — Enterprise Data Intelligence Platform",
       description: "An enterprise-grade data intelligence platform designed to transform raw, unreliable datasets into clean, validated, actionable insights. Provides ingestion, profiling, validation, cleaning, transformation, quality analysis, anomaly detection, and interactive analytics, with JWT authentication and role-based access control.",
       technologies: "Python 3.11, React 19, PostgreSQL, Tailwind CSS, JWT Authentication, Pytest",
@@ -45,13 +45,20 @@ export const portfolio = {
       demo: "",
     },
     {
+      name: "AR-Y-Try",
+      description: "An AI-powered virtual try-on e-commerce platform featuring generative AI clothing try-ons, personalized styling recommendations, and real-time AR lipstick application. Includes a Chrome extension, an AI stylist dashboard, and a Python-based MediaPipe AR server.",
+      technologies: "React, Vite, Redux, Tailwind CSS, Node.js, Express.js, MongoDB, Google Gemini 2.0 Flash, Python, Flask, MediaPipe, OpenCV, Vercel",
+      github: "https://github.com/shineetejol9/AR-Y-Try",
+      demo: "https://ar-y-try-w1jg.vercel.app/",
+    },
+    {
       name: "ZestVerse",
       description: "A multilingual gamified learning platform where students learn through interactive educational games instead of traditional methods. The prototype includes Class 6 learning content.",
       technologies: "React 19, JavaScript ES6+, JSX, Tailwind CSS, Phaser.js 3, HTML5, CSS3, Hosted on Vercel",
       github: "https://github.com/shineetejol9/zestverse1",
       demo: "",
     },
-   
+
   ],
 
   certifications: [
@@ -65,22 +72,22 @@ export const portfolio = {
     { name: "GIET BBSR Innovate 5.0 National-Level Hackathon — Participation", issuer: "GIET Bhubaneswar", date: "2026", url: "https://lnkd.in/p/daPwSkkE" },
     { name: "Pravaah 26 National-Level Hackathon — Participation", issuer: "IIT Bhubaneswar", date: "2026", url: "https://lnkd.in/p/d3wP9_cA" },
     { name: "Hacksagon 2026 National-Level Hackathon — Finalist", issuer: "ABV-IIITM Gwalior", date: "2026", url: "https://lnkd.in/p/dzaA7VdW" },
-    { name: "Selected forSocial Summer of Code (SSoC) Season 5 — Contributor", issuer: "Social Summer of Code", date: "2026", url: "https://lnkd.in/p/dSFxNsHQ",linkLabel: "VIEW Mail 11" },
-    { name: "Selected for GirlScript Summer of Code 2026 — Open-Source Contributor", issuer: "GirlScript Summer of Code", date: "2026", url: "https://lnkd.in/p/dinfij9b",linkLabel: "VIEW Mail 12"},
+    { name: "Selected forSocial Summer of Code (SSoC) Season 5 — Contributor", issuer: "Social Summer of Code", date: "2026", url: "https://lnkd.in/p/dSFxNsHQ", linkLabel: "VIEW Mail 11" },
+    { name: "Selected for GirlScript Summer of Code 2026 — Open-Source Contributor", issuer: "GirlScript Summer of Code", date: "2026", url: "https://lnkd.in/p/dinfij9b", linkLabel: "VIEW Mail 12" },
   ],
 
   skills: {
-  "Tech Stack": [
-    "HTML5",
-    "JavaScript (JS)",
-    "Tailwind CSS",
-    "React / Next.js",
-    "Node.js",
-    "Python",
-    "Data Science",
-    "MongoDB",
-  ],
-},
+    "Tech Stack": [
+      "HTML5",
+      "JavaScript (JS)",
+      "Tailwind CSS",
+      "React / Next.js",
+      "Node.js",
+      "Python",
+      "Data Science",
+      "MongoDB",
+    ],
+  },
 
   contact: {
     email: "shineetejolpatro@gmail.com",
