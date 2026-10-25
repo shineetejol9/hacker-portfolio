@@ -28,7 +28,7 @@ export const portfolio = {
       description: "An enterprise-grade data intelligence platform designed to transform raw, unreliable datasets into clean, validated, actionable insights. Provides ingestion, profiling, validation, cleaning, transformation, quality analysis, anomaly detection, and interactive analytics, with JWT authentication and role-based access control.",
       technologies: "Python 3.11, React 19, PostgreSQL, Tailwind CSS, JWT Authentication, Pytest",
       github: "https://github.com/shineetejol9/nexus",
-      demo: "",
+      demo: "https://nexus-frontend-b92c.onrender.com",
     },
     {
       name: "ShopSense AI",
@@ -56,7 +56,7 @@ export const portfolio = {
       description: "A multilingual gamified learning platform where students learn through interactive educational games instead of traditional methods. The prototype includes Class 6 learning content.",
       technologies: "React 19, JavaScript ES6+, JSX, Tailwind CSS, Phaser.js 3, HTML5, CSS3, Hosted on Vercel",
       github: "https://github.com/shineetejol9/zestverse1",
-      demo: "",
+      demo: "https://zestverse1.vercel.app/",
     },
 
   ],
